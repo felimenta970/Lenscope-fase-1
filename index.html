@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Felipe Pimenta</title>
+
+        <!-- CSS de Bootstrap e código próprio-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+    </head>
+
+    <body>
+
+        
+
+        <h1>Determinação de lente</h1>
+        <br>
+
+        <div>
+            <h3>Qual o seu grau?</h3>
+            <br>
+
+            <p class = "tipoGrau">Esférico</p>
+
+            <label for="esqEsferico">Esquerdo</label>
+            <input type="number" step="0.25" id="esqEsferico" name="esqEsferico" min="-15" max ="0" value="0"> &nbsp;
+
+            <label for="dirEsferico">Direito</label>
+            <input type="number" step="0.25" id="dirEsferico" name="dirEsferico" min="-15" max ="0" value="0">
+
+            <br>
+            <br>
+
+            <p class = "tipoGrau">Cilíndrico</p>
+
+            <label for="esqCilindrico">Esquerdo</label>
+            <input type="number" step="0.25" id="esqCilindrico" name="esqCilindrico" min="-6" max ="0" value="0"> &nbsp;
+
+            <label for="dirCilindrico">Direito</label>
+            <input type="number" step="0.25" id="dirCilindrico" name="dirCilindrico" min="-6" max ="0" value="0">
+
+            <br>
+            <br>
+
+            <button onclick="verificaLente()">Verificar</button>
+
+            <br>
+            <br>
+
+            <div id = "isPrime">
+                <p>Indicamos para você as lentes Prime</p>>
+            </div>
+
+            <div id = "isVision">
+                <p>Indicamos para você as lentes Vision</p>
+            </div>
+        </div>
+        
+    
+
+        <script src="js/javascript.js"></script>
+        
+    </body>
+</html>
